@@ -3,7 +3,9 @@ using namespace std;
 
 int main()
 {
-    int num1=10,num2=3;
+    int num1,num2;
+    cout<<"Enter two numbers: ";
+    cin>>num1>>num2;
 
     int sum= num1+num2;
     cout<<"The Summation is: "<<sum<<endl;
