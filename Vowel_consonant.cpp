@@ -6,8 +6,8 @@ int main()
     char ch;
     cout<<"Enter any letter: ";
     cin>>ch;
-    if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' ||
-    ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+    ch= tolower(ch);
+    if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
         cout<<"Vowel";
     else cout<<"Consonant";
 }
