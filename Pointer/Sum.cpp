@@ -7,6 +7,6 @@ int main()
     int *p,*q;
     p=&x;
     q=&y;
-    int sum= *p+*q;
+    int sum=*p+*q;
     cout<<sum<<endl;
 }
