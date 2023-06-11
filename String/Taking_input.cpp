@@ -12,7 +12,7 @@ int main()
     cout<<"Welcome "<<name<<endl;
 
     cout<<"Enter your name: ";
-    gets(name2); //Can read after whitespace but causes bufferoverflow, will catch the input buffer from previous input;
+    gets(name2); //Can read after whitespace but causes buffer overflow, will catch the input buffer from previous input;
     cout<<"Welcome2 "<<name2<<endl;
 
     cout<<"Enter your name: ";
