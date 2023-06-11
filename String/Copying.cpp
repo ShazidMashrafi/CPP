@@ -8,4 +8,7 @@ int main()
 
     s2=s1; //string copying
     cout<<s2<<endl;
+
+    string s3 (s1); // Also copies
+    cout<<s3<<endl;
 }
