@@ -1,19 +1,11 @@
 #include<iostream>
+#include<string.h>
+#include<algorithm>  // reverse is defined in algorithm header
 using namespace std;
 
 int main()
 {
-    bool p=true;
-    string str;
-    cin>>str;
-    for(int i=0; i<str.size()/2; i++)
-    {
-        if(str[i]!=str[str.size()-1-i])
-        {
-            p=false;
-            break;
-        }
-    }
-    if(p) cout<<"Yes"<<endl;
-    else cout<<"No"<<endl;
+    string s="Shazid";
+    reverse(s.begin(),s.end());
+    cout<<"reversed string is: "<<s<<endl;
 }
