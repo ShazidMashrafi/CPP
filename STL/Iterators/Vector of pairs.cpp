@@ -14,6 +14,6 @@ int main()
     //Another syntax
     // for(it= v_p.begin();  it!=v_p.end(); ++it)
     // {
-    //     cout<< (it->first)<<" "<<(it->second)<<endl;
+    //     cout<< (it->first)<<" "<<(it->second)<<endl;  //This is used more often
     // }
 }
