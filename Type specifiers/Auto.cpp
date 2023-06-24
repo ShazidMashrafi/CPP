@@ -7,8 +7,7 @@
 // auto i=5, *p=&i     //no errors because they both are actually int
 // auto i=5, j=3.14    //will lead to an error, because i and j are not the same base type
 
-#include<iostream>
-#include<typeinfo>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
