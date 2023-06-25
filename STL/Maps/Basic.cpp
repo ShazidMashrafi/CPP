@@ -15,6 +15,8 @@ int main()
     m.insert({4,"jkl"});
     // Accessing and using map takes O(log(n))
     
+    cout<<m[1]<<endl; //will print out only the value of m[1];
+
     //Printing using iterators
     map<int,string>:: iterator it;
     for(it=m.begin(); it!=m.end(); ++it)
@@ -27,6 +29,4 @@ int main()
     {
         cout<<pr.first<<" "<<pr.second<<endl;
     }
-
-
 }
