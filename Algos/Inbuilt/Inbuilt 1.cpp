@@ -16,14 +16,18 @@ int main()
 
     // min_element(starting,ending)
     // Gives pointer or location or iterator of the minimum element
-    int min = *min_element(v.begin(), v.end());
-    cout << min << endl;
+    auto min = min_element(v.begin(), v.end());
+    cout << *min << endl;
+    // min_element index
+    cout<< min-v.begin()<<endl;
 
     // max_element(starting,ending)
     // Gives pointer or location or iterator of the maximum element
-    int max = *max_element(v.begin(), v.end());
-    cout << max << endl;
-
+    auto max = max_element(v.begin(), v.end());
+    cout << *max << endl;
+    // max_element index
+    cout << max - v.begin() << endl;
+    
     // accumulate(staring, ending, initial sum)
     // Gives the sum of elements+ initial sum
     int sum = accumulate(v.begin(),v.end(),0);
