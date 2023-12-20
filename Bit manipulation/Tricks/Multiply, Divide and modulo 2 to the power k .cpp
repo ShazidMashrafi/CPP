@@ -21,4 +21,7 @@ int main()
     cout<<"Multiply and divide by 2^"<<i<<": "<<endl;
     print(n<<i);
     print(n>>i);
+
+    cout<<"Modulo of 2^"<<i<<": "<<endl;
+    print(n & ((1<<i)-1));
 }
