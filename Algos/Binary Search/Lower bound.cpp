@@ -8,17 +8,17 @@ int main()
     vector<int>v(n);
     for(int i=0; i<n; ++i)
         cin>>v[i];
-    int L=0, R=n-1, ans=-1;
-    while(L<=R)
+    int low=0, high=n-1, ans=-1;
+    while(low<=high)
     {
-        int mid = L + (R-L)/2;
-        if(v[mid]>=x)
-        {
-            ans=mid;
-            R=mid-1;
-        }
+        int mid = low + (high-low)/2;
+        if(v[mid]<x)
+            low = mid+1;
         else
-            L=mid+1;
+        {
+            ans = mid;
+            high = mid-1;
+        }
     }
     if(ans==-1)
         cout<<"Not found"<<endl;
