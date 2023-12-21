@@ -8,19 +8,19 @@ int main()
     for(int i=0; i<n; ++i)
         cin>>v[i];
     
-    int L=0, R=n-1, ans=-1;
-    while(L<=R)
+    int low=0, high=n-1, ans=-1;
+    while(low<=high)
     {
-        int M = L + (R-L)/2;
-        if(v[M]==target)
+        int mid = low + (high-low)/2;
+        if(v[mid]==target)
         {
-            ans=M;
+            ans = mid;
             break;
         }
-        if(v[M]<target)
-            L = M+1;
+        else if(v[mid]<target)
+            low = mid+1;
         else
-            R = M-1;
+            high = mid-1;
     }
     cout<<ans<<endl;
 }
