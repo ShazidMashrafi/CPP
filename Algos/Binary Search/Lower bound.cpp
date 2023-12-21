@@ -23,5 +23,5 @@ int main()
     if(ans==-1)
         cout<<"Not found"<<endl;
     else
-        cout<<"Found at position "<<ans<<" vale "<<v[ans]<<endl;
+        cout<<"Found at position "<<ans<<" value "<<v[ans]<<endl;
 }
