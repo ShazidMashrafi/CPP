@@ -1,21 +1,21 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int minimum(vector<int> &v, int low, int high)
+int minimum(vector<int> &v, int l, int r)
 {
-    if(v[low]<=v[high])
-        return v[low];
-    while(low<=high)
+    int ans=v[0];
+    while(l<=r)
     {
-        int mid = low+(high-low)/2;
-        if(v[low]>=v[mid] && v[high]>=v[mid])
-            return v[mid];
-        if(v[mid]>v[high])
-            low = mid+1;
+        if(v[l]<=v[r])
+            return min(ans,v[l]);
+        int m = l + (r-l)/2;
+        ans = min(ans,v[m]);
+        if(v[m]>= v[l])
+            l = m+1;
         else
-            high = mid-1;
+            r = m -1;
     }
-    return v[low];
+    return ans;
 }
 int main()
 {
