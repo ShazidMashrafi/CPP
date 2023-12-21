@@ -14,4 +14,5 @@ int main()
     cout<<gcd(12,18)<<endl;
     cout<<gcd(1,18)<<endl;
     cout<<12*18/gcd(12,18)<<endl;
+    cout<<gcd(4,gcd(12,18))<<endl;
 }
