@@ -21,7 +21,7 @@ int main()
     }
     if(v[lo]==to_find)
         cout<<lo<<endl;
-    else if(v[lo]==to_find)
+    else if(v[hi]==to_find)
         cout<<hi<<endl;
     else
         cout<<"Not found"<<endl;
