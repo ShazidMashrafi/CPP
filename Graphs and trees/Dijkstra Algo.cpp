@@ -28,9 +28,9 @@ void dijkstra(int source)
         {
             int child_v =  child.first;
             int wt =  child.second;
-            if(dis[v]+wt < dis[child_v])
+            if(d + wt < dis[child_v])
             {
-                dis[child_v] = dis[v] + wt;
+                dis[child_v] = d + wt;
                 st.insert({dis[child_v],child_v});
             }
         }
