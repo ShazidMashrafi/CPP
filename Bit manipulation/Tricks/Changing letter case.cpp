@@ -23,7 +23,7 @@ int main()
     // 1<<5 also means a blank space
     print(1<<5);
     print(' ');
-    cout<<char(uc|' ')<<endl;
+    cout<<char(uc | ' ')<<endl;
 
     //Lowercase to uppercase
     lc='z';
