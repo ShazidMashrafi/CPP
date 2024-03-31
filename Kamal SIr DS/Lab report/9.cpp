@@ -20,8 +20,8 @@ void DELETE(char info[], int link[], int start)
     cout << "\nEnter the item: ";
     cin >> item;
 
-    if(item==info[start])
-        start=link[start];
+    if (item == info[start])
+        start = link[start];
     else
     {
         int ptr = start, prevptr = start;
@@ -36,7 +36,7 @@ void DELETE(char info[], int link[], int start)
             prevptr = ptr;
         }
     }
-    
+
     cout << "\nAfter deleting the first item: ";
     DISPLAY(info, link, start);
 }
