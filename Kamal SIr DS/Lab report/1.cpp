@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+void TRAVERSE(int arr[], int n)
+{
+    for (int i = 0; i < n; ++i)
+        cout << arr[i] << " ";
+    cout << endl;
+}
+
 int main()
 {
     int n;
@@ -11,7 +18,5 @@ int main()
     for (int i = 0; i < n; ++i)
         cin >> arr[i];
     cout << "The elements of the array are: ";
-    for (auto x : arr)
-        cout << x << " ";
-    cout << endl;
+    TRAVERSE(arr, n);
 }

@@ -1,8 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+void DISPLAY(int arr[], int n)
+{
+    for (int i = 0; i < n; ++i)
+        cout << arr[i] << " ";
+    cout << endl;
+}
+
 void INSERT(int arr[], int n)
 {
+    cout << "\nBefore insertion the array is: ";
+    DISPLAY(arr,n);
+    
     int pos, item;
     cout << "\nEnter the position and the item: ";
     cin >> pos >> item;
@@ -11,10 +21,9 @@ void INSERT(int arr[], int n)
         arr[i + 1] = arr[i];
     arr[pos] = item;
     n++;
+
     cout << "\nAfter insertion the array is: ";
-    for (int i = 0; i < n; ++i)
-        cout << arr[i] << " ";
-    cout << endl;
+    DISPLAY(arr,n);
 }
 
 int main()

@@ -1,21 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int DELETE(int arr[], int n, int k)
+void DISPLAY(int arr[], int n)
 {
-    cout << "Before deleting the element the array is: ";
     for (int i = 0; i < n; ++i)
         cout << arr[i] << " ";
     cout << endl;
+}
+
+int DELETE(int arr[], int n, int k)
+{
+    cout << "Before deleting the element the array is: ";
+    DISPLAY(arr,n);
 
     int item = arr[k];
     for (int i = k; i < n - 1; ++i)
         arr[i] = arr[i + 1];
     n--;
+    
     cout << "After deleting the element the array is: ";
-    for (int i = 0; i < n; ++i)
-        cout << arr[i] << " ";
-    cout << endl;
+    DISPLAY(arr,n);
     cout << "The deleted item is: " << item << endl;
 }
 

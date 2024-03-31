@@ -1,36 +1,39 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
+void TRAVERSE(int arr[], int n)
 {
-    int n;
+    for (int i = 0; i < n; ++i)
+        cout << arr[i] << " ";
+    cout << endl;
+}
 
-    cout << "Enter the size of array: ";
-    cin >> n;
-
-    int a[n];
-
-    cout << "\nEnter the elements: ";
-    for (int i = 0; i < n; i++)
-        cin >> a[i];
-
+void SORT(int arr[], int n)
+{
     for (int i = 0; i < n; i++)
     {
         for (int j = i + 1; j < n; j++)
         {
-            if (a[i] > a[j])
+            if (arr[i] > arr[j])
             {
-                int temp = a[i];
-                a[i] = a[j];
-                a[j] = temp;
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
             }
         }
     }
+    cout << "\nArray after sorting: ";
+    TRAVERSE(arr, n);
+}
 
-    cout << "\nArray after swapping: ";
-
+int main()
+{
+    int n;
+    cout << "Enter the size of array: ";
+    cin >> n;
+    int arr[n];
+    cout << "\nEnter the elements: ";
     for (int i = 0; i < n; i++)
-        cout << a[i] << " ";
-
-    return 0;
+        cin >> arr[i];
+    SORT(arr, n);
 }
