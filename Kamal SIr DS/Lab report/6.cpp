@@ -1,5 +1,5 @@
 // Find a pair with the given sum in an array
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 const int N = 1e5 + 10;

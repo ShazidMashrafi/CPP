@@ -1,5 +1,5 @@
 // Sort an array of items
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 void TRAVERSE(int arr[], int n)

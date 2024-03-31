@@ -1,5 +1,5 @@
 // Delete an item from a define place in an array
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 void DISPLAY(int arr[], int n)

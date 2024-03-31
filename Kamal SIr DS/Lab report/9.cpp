@@ -1,5 +1,5 @@
 // Delete a specific key item from a link list
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 void DISPLAY(char info[], int link[], int start)

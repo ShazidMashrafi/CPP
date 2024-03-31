@@ -1,5 +1,5 @@
 // Search for a key item in an array
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 void SEARCH(int arr[], int n)

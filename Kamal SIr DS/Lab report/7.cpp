@@ -1,5 +1,5 @@
 // Traverse items in a link list data structure
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 void TRAVERSE(char info[], int link[], int start)

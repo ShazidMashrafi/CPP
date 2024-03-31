@@ -1,5 +1,5 @@
 // Search for a key item in a link list
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 void FIND(char info[], int link[], int start)
