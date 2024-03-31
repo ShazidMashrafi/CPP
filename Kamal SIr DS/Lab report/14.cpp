@@ -5,7 +5,7 @@ using namespace std;
 
 void SAVE(char text[])
 {
-    FILE* outfile = fopen("output.txt", "w");
+    FILE *outfile = fopen("output.txt", "w");
     fputs(text, outfile);
     fclose(outfile);
 }

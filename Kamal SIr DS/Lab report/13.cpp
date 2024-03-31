@@ -26,9 +26,9 @@ void INDEX(char s[], char sub[])
 int main()
 {
     char s[1000], sub[100];
-    cout<<"Enter string: ";
+    cout << "Enter string: ";
     cin.getline(s, 1000);
-    cout<<"\nEnter substring: ";
+    cout << "\nEnter substring: ";
     cin.getline(sub, 100);
     INDEX(s, sub);
 }
