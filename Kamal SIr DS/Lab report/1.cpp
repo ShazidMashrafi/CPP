@@ -1,3 +1,4 @@
+// Traverse items in an array data structure
 #include <iostream>
 using namespace std;
 

@@ -1,3 +1,4 @@
+// Delete an item from a define place in an array
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -17,7 +18,7 @@ int DELETE(int arr[], int n, int k)
     for (int i = k; i < n - 1; ++i)
         arr[i] = arr[i + 1];
     n--;
-    
+
     cout << "After deleting the element the array is: ";
     DISPLAY(arr,n);
     cout << "The deleted item is: " << item << endl;

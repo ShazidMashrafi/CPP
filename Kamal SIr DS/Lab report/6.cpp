@@ -1,3 +1,4 @@
+// Find a pair with the given sum in an array
 #include <bits/stdc++.h>
 using namespace std;
 

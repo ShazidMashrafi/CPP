@@ -1,3 +1,4 @@
+// Insert an item at a given position in an array
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -12,7 +13,7 @@ void INSERT(int arr[], int n)
 {
     cout << "\nBefore insertion the array is: ";
     DISPLAY(arr,n);
-    
+
     int pos, item;
     cout << "\nEnter the position and the item: ";
     cin >> pos >> item;

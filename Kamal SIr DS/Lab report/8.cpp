@@ -1,3 +1,4 @@
+// Delete the first item from a link list
 #include <bits/stdc++.h>
 using namespace std;
 

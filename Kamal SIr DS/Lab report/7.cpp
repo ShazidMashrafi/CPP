@@ -1,3 +1,4 @@
+// Traverse items in a link list data structure
 #include<bits/stdc++.h>
 using namespace std;
 

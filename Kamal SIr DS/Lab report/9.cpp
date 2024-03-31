@@ -1,3 +1,4 @@
+// Delete a specific key item from a link list
 #include <bits/stdc++.h>
 using namespace std;
 

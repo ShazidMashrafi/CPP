@@ -1,3 +1,4 @@
+// Search for a key item in an array
 #include <bits/stdc++.h>
 using namespace std;
 
