@@ -14,7 +14,7 @@ void DISPLAY(char info[], int link[], int start)
 
 void DELETE(char info[], int link[], int start)
 {
-    cout << "\nBefore deleting the first item: ";
+    cout << "\nBefore deleting the item: ";
     DISPLAY(info, link, start);
 
     char item;
@@ -38,7 +38,7 @@ void DELETE(char info[], int link[], int start)
         }
     }
 
-    cout << "\nAfter deleting the first item: ";
+    cout << "\nAfter deleting the item: ";
     DISPLAY(info, link, start);
 }
 
