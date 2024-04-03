@@ -2,11 +2,9 @@
 #include <iostream>
 using namespace std;
 
-#include <iostream>
-
 void DISPLAY(char text[])
 {
-    cout << text << std::endl;
+    cout << text << endl;
 }
 
 void REVERSE(char text[], int n)
