@@ -1,24 +1,26 @@
 // Given a complete binary tree. Now store tree data
 // in an array and print all the leaf nodes
 #include <iostream>
-#include <math.h>
 using namespace std;
 
-void LEAF(int tree[], int n, int d)
+void LEAF(int tree[], int n)
 {
-    int m = (int)pow(2, d - 1) - 1;
-    for (int i = m; i < n; ++i)
-        cout << tree[i] << " ";
+    cout<<"\nThe leaf nodes are: ";
+    for (int i = 1; i <= n; ++i)
+    {
+        if(2*i>n)
+            cout<<i<<" ";
+    }
 }
 
 int main()
 {
-    int d, n;
-    cout << "Enter depth and number of nodes: ";
-    cin >> d >> n;
+    int n;
+    cout << "Enter the number of nodes: ";
+    cin >> n;
     int tree[n];
     cout << "\nEnter nodes: ";
     for (int i = 0; i < n; ++i)
         cin >> tree[i];
-    LEAF(tree, n, d);
+    LEAF(tree, n);
 }
