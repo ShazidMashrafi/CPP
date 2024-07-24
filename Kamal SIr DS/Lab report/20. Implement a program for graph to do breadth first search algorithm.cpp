@@ -18,8 +18,8 @@ void BFS(int source)
     while (!q.empty())
     {
         int vertex = q.front();
-        q.pop();
         cout << vertex << " ";
+        q.pop();
         for (int child : g[vertex])
         {
             if (!vis[child])

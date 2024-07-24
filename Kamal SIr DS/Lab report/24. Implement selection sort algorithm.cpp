@@ -12,8 +12,7 @@ void SELECTION_SORT(int arr[], int n)
             if (arr[j] < arr[min])
                 min = j;
         }
-        if (min != i)
-            swap(arr[min], arr[i]);
+        swap(arr[min], arr[i]);
     }
 }
 

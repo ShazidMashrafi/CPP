@@ -53,16 +53,16 @@ void STACK(char (&stack)[][1000], int &top, int max)
     cout << "3.Display stack" << endl;
     cout << "4.Exit" << endl;
     cout << "Enter your choice: ";
-    char choice[1000];
-    cin >> choice;
+    int ch;
+    cin >> ch;
     cout << endl;
-    if(strcmp(choice,"1")==0)
+    if(ch==1)
         PUSH(stack, top, max);
-    else if(strcmp(choice,"2")==0)
+    else if(ch==2)
         POP(stack, top, max);
-    else if(strcmp(choice,"3")==0)
+    else if(ch==3)
         DISPLAY(stack, top, max);
-    else if(strcmp(choice,"4")==0)
+    else if(ch==4)
         return;
     else
         cout << "Invalid input. Try again." << endl << endl;

@@ -1,4 +1,4 @@
-// Insert a string in another string when the position to insert is given.
+// Insert a string in another string when the position to insert is given
 #include <iostream>
 using namespace std;
 

@@ -29,7 +29,6 @@ void DISPLAY(char (&queue)[][1000], int &front, int &rear, int max)
 
 void INSERT(char (&queue)[][1000], int &front, int &rear, int max)
 {
-    cout<<front<<" "<<rear<<endl;
     if ((front == 0 && rear == max - 1) || front == rear + 1)
     {
         cout << "No space in queue." << endl << endl;
@@ -76,16 +75,16 @@ void QUEUE(char (&queue)[][1000], int &front, int &rear, int max)
     cout << "3.Display queue" << endl;
     cout << "4.Exit" << endl;
     cout << "Enter your choice: ";
-    char choice[1000];
-    cin >> choice;
+    int ch;
+    cin >> ch;
     cout << endl;
-    if(strcmp(choice,"1")==0)
+    if(ch==1)
         INSERT(queue, front, rear, max);
-    else if(strcmp(choice,"2")==0)
+    else if(ch==2)
         DELETE(queue, front, rear, max);
-    else if(strcmp(choice,"3")==0)
+    else if(ch==3)
         DISPLAY(queue, front, rear, max);
-    else if(strcmp(choice,"4")==0)
+    else if(ch==4)
         return;
     else
         cout << "Invalid input. Try again." << endl << endl;
