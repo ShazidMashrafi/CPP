@@ -1,0 +1,37 @@
+a:link{
+    color: seagreen;
+}
+a:visited{
+    color: rgb(185, 38, 138);
+}
+button:hover{
+    background-color: tomato;
+    color:blue;
+}
+button:active{
+    background-color: rgb(244, 3, 3);
+}
+li:first-child{
+    background-color: greenyellow;
+}
+li:last-child{
+    background-color: lightblue;
+}
+li:nth-child(5){
+    background-color: red;
+}
+li:nth-child(even){
+    background-color: lightgreen;
+}
+li:nth-child(odd){
+    background-color: rgb(46, 246, 46);
+}
+
+/* nth-child(an+b) => a=cycle size, 
+                    n=counter(starts at 0),
+                    b= offset value */
+li:nth-child(3n+1){
+    background-image: linear-gradient(to right, #fff421, #ffffff);
+    border: 1px solid;
+    opacity:0.5;
+}

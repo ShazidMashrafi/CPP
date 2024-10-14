@@ -1,0 +1,19 @@
+#box1{
+    position: relative;
+    background-color: lightgray;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    top:100px;
+    margin: auto;
+}
+#box2{
+    /* position is relative to it's positioned ancestor  */
+    position: absolute;
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    top:50px;
+    left:50px;
+}

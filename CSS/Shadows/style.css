@@ -1,0 +1,9 @@
+h1{ 
+    border:1px solid;
+    width: 200px;
+    padding: 25px;
+    /* shadow: horizontal vertical blur color  */
+    text-shadow: 2px 2px 2px yellowgreen, 0px 0px 5px red;
+
+    box-shadow: 10px 10px 5px #666666;
+}

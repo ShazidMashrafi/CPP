@@ -1,0 +1,27 @@
+p{
+    border-style: solid;
+    padding: 5px;
+    /* latest will override earlier ones  */
+    border-style: outset;
+    /* will set all sides to 3px */
+    border-width: 3px;
+    /* top right bottom left  */
+    border-width: 3px 5px 3px 5px;
+    border-color: #00FF00;
+    /* will round the edges */
+    border-radius: 10px;
+}
+
+h1{
+    padding:10px;
+    border-bottom-style: dotted;
+    border-top-style: solid;
+    border-left-style: dashed;
+    border-right-style: dotted;
+    border-left-color: #dc3a3a;
+    border-color: white;
+}
+body{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Website</title>
+</head>
+<body>
+    <form>
+        <!-- id = is client site identifier. Used to identify this specific element
+          name = is used to post and get values
+          -->
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="first_name" placeholder="Shazid">
+        <br>
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Mashrafi">
+        <br>
+        <label for="gender">Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" value="Male" id="male" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" value="Female" id="female" name="gender">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday" min="2000-01-01">
+        <br>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+        <br>
+        <label for="payment">Payment</label>
+        <select name="payment" id="payment">
+            <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="gift_card">Gift card</option>
+            <option value="cash">Cash</option>
+        </select>
+        <br>
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="10" value="1">
+        <br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass" maxlength="12">
+        <br>
+        <label for="rate">Rate us</label>
+        <!-- steps is counted in 100
+        if steps is 25 then it is 0-25, 26-50, 51-75, 76-100 -->
+        1<input type="range" id="rate" name="rate" steps="25" value="100">5
+        <br>
+        <label for="check">Check me</label>
+        <input type="checkbox" id="check" name="check">
+        <br>
+        <label for="my_file">File</label>
+        <input type="file" id="my_file" name="my_file" accept=".txt">
+        <br>
+        <input type="reset">
+        <br>
+        <input type="submit" value="Submit" >
+    </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+h1{
+    border: 1px solid;
+    background: yellow;
+    width:200px;
+
+    /* fixed within viewport */
+    position: fixed;
+
+    /* relative to it's normal position */
+    position: relative;
+
+    /* stick to certain position */
+    position: sticky;
+
+    /* default */
+    position: static;
+    top:50px;
+}

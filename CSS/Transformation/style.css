@@ -1,0 +1,40 @@
+p{
+    width: 100px;
+    background: red;
+    font-size: 85px;
+    text-align: center;
+    margin: 0px;
+}
+
+#p2{
+    /* move left or right  */
+    /* transform: translateX(50px); */
+    /* move up or down  */
+    /* transform: translateY(50px); */
+    /* translate(x,y) */
+    /* transform: translate(50px, 30px) */
+    
+    /* rotate on x axis  */
+    transform: rotateX(180deg);
+    /* rotate on y axis  */
+    /* transform: rotateY(180deg); */
+    /* rotate on y axis  */
+    /* transform: rotateZ(180deg); */
+
+    /* Scale on x  */
+    /* transform: scaleX(2); */
+    /* Scale on y  */
+    /* transform: scaleY(.5); */
+    /* Scale(x,y)  */
+    /* transform: scale(0.5, 2); */
+
+    /* skew on X */
+    /* transform: skewX(30deg); */
+    /* skew on Y*/
+    /* transform: skewY(30deg); */
+    /* skew on XY */
+    /* transform: skew(30deg, 45deg); */
+
+    /* transform: matrix(scaleX, skewY, skewX, scaleY, translateX, translateY) */
+    transform: matrix(.5, 1, 1, .5, 50, 50);
+}

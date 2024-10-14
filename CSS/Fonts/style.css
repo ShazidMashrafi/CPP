@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+p{
+    /* the first font will be used, if it is not supported then the next one will be used and so on  */
+    font-family: 'Ink Free',monospace, sans-serif;
+    font-style:italic;
+    font-weight: bold;
+    /* default size is 16px */
+    font-size: 18px;
+    /* 1 em is 16px */
+    font-size: 2em;
+    /* it will set underline of wavy type and in color blue  */
+    text-decoration: underline wavy blue;
+    text-decoration: none;
+    color: #00AA00;
+    background-color: #111111; 
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: #00FF00;
+}

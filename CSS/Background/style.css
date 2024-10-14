@@ -1,0 +1,22 @@
+html{
+    /* adding color as background  */
+    background-color: greenyellow;
+    /* adding gradient color as background */
+    background: linear-gradient(grey,black);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(bg.jpg);
+}   
+h1{
+    background: linear-gradient(red,green,blue);
+}
+p{
+    color: white;
+    background: linear-gradient(to right, grey,black);
+}
+#my_div{
+    color:white;
+    background: linear-gradient(to right, grey,black);
+}

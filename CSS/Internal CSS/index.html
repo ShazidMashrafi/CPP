@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- internal css needs to be written inside head  -->
+    <style>
+        /* using by tags    */
+        p{
+            background-color: #111111;
+            color: #00aa00;
+        }
+        /* using by id  */
+        #paragraph2{
+            color:red;
+            background-color: lightcyan;
+        }
+        /* targeting by class */
+        .top
+        {
+            font-size: 20px;
+        }
+        /* targeting by id then class  */
+        p.top{
+            font-style: italic;
+        }
+        /* targeting all h1 and p tags  */
+        h1,p {
+            border:5px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <!-- class is a group of elements -->
+    <h1 class="top">CSS Demo</h1>
+    <p class="top" id="paragraph1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, laudantium. At sapiente doloribus ducimus voluptas nihil totam accusamus reprehenderit velit officia! Officiis dolor quidem nihil dolorem ipsam. Ad, ipsum beatae.</p>
+    <br>
+    <p class="bottom" id="paragraph2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque exercitationem in excepturi quaerat voluptate commodi ex aliquid provident perspiciatis, rem reiciendis debitis maxime cumque. Suscipit itaque temporibus aperiam quos amet!</p>
+</body>
+</html>
