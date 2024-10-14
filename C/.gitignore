@@ -1,6 +1,0 @@
-*.exe
-*.txt
-!final note.txt
-Test/
-.cph/
-*.bin
