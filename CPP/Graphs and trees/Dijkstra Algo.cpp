@@ -7,14 +7,14 @@ const int INF = 1e9+10;
 
 vector<pair<int,int>> g[N];
 
-void dijkstra(int source)
+void dijkstra(int v, int n)
 {
     vector<int>vis(N,0);
     vector<int>dis(N,INF);
 
     set<pair<int,int>>st;
-    st.insert({0,source});
-    dis[source]=0;
+    st.insert({0,v});
+    dis[v]=0;
     while(st.size())
     {
         auto node = *st.begin();
@@ -35,6 +35,14 @@ void dijkstra(int source)
             }
         }
     }
+
+    for(int i = 1; i <= n; ++i) 
+    {
+        if(dis[i]==INF)
+            cout << "Distance from " << v << " to " << i << " is " << "I " << endl;
+        else
+            cout << "Distance from " << v << " to " << i << " is " << dis[i] << endl;
+    }
 }
 int main()
 {
@@ -46,4 +54,7 @@ int main()
         cin>>x>>y>>wt;
         g[x].push_back({y,wt});
     }
+    int v;
+    cin>>v;
+    dijkstra(v,n);
 }
