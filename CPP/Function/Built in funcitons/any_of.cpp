@@ -8,8 +8,6 @@ bool is_even(int x)
 {
     return !(x&1);
 }
-onstructive algorithmsimplementation*1000
-onstructive algorithmsimplementation*1000
 
 int main()
 {
