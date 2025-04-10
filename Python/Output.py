@@ -1,6 +1,0 @@
-print(10)
-print(10.5)
-print("Shazid")
-#Invalid print(Shazid)
-print("Shazid Mashrafi")
-print("Shazid" + " Mashrafi")
